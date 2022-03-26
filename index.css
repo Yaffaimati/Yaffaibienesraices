@@ -85,6 +85,7 @@ footer h3 {width: 100%;
                           border-style: solid;
                           border-width: 5vw;
                           border-color: white;
+
                        }
  
 .contactanos__titulo--xxl{ width: 100%;
@@ -102,6 +103,43 @@ footer h3 {width: 100%;
            color: rgb(38,46,45);
            font-family: 'Roboto', sans-serif;
         }
+
+/*gradientes*/
+.nav-gradiente { background: linear-gradient(to top, orange,yellow); }
+
+/*transformaciones*/
+.transform:hover { transform: translate(10px,25px);
+                   cursor: pointer; }
+
+
+.scale-redes:hover{ transform: scale(1.5);
+             cursor: pointer; 
+              transition: transform 2s;
+               }
+/*animaciones*/
+@keyframes animateDiv {
+    50%{widtch:300px}
+    70%{width: 400px;}
+    80%{width: 600px}
+    90%{width: 700px; background-color:rgb(56, 102, 176) ;}
+    100%{width: 800px; background-color: rgb(48, 199, 161);}
+    }
+.animate{
+         animation-name: animateDiv; 
+         animation-iteration-count: infinite;
+         animation-timing-funsction: ease;
+         animation-duration: 3.5s;
+         animation-delay: 3s;}
+
+.transition:hover { width: 500px;
+                    background-color: skyblue;
+                    color: black;
+                    transition: all 5s }
+h1 {width: 500px;
+                    background-color: skyblue;
+                    color: black;
+                    transition: all 5s;}
+
 /*botonera*/
 ul {width: 100%;
    list-style-type: none;
