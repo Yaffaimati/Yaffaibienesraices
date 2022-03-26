@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bienes Raices Yaffai</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body >	
+	 
+	 <header>
+ 	 <!-- inicia nav -->
+ 	 <div  class="encabezado__lema--xl">
+ 	 	<p class="textCenter">Bienvenido a una nueva etapa</p>
+ 	 </div>
+
+ <div class="contenedor" width= "100%">
+	 
+	 <nav  width="100%" class="encabezado" >
+		<a href="index.html"><img src="image/logo.png" alt="Logo Yaffai" id="index.html"></a>
+		<ul  class="encabezado">  
+			<li> <a href="Venta">Venta</a>
+			  <ul>
+				<li><a href="casas.html"> Casas</a></li>
+				<li><a href="lotes.html">Lotes </a></li>
+			  </ul>
+		   </li>
+			<li> <a href="Alquiler">Alquiler</a>
+			<ul>
+				<li><a href="departamentos.html">Departamentos</a></li>
+				<li><a href="comercial.html"> Comercial</a></li>
+			</ul>
+		</li>
+			<li><a href="#contacto" class="contacto">Contacto</a></li>
+		</ul>
+	</nav>
+	</header>
+		 
+	 
+	<p>
+	<main>   
+		 <img src="image/prour.jpg" width="100%" alt="Proyecto Urbano" class="encabezado__img--fluid">
+
+		<section id="contacto" class="Contactanos">
+			<article class="contactanos__box--gray" class="bgDark"> 
+				<h1 class="Contactanos__titulo--xxl">Contactanos</h1>
+				<!-- inica form -->
+				<form  action="envio.php" method="post">
+					<fieldset>
+					<legend>Datos Personales</legend>
+					<label for="nombre">Nombre y Apellido</label>
+					<input type="text" placeholder="Matias Yaffai" name="nombre" id="nombre">
+					<p>
+					<label for="email">Email</label>
+					<input type="email" placeholder="yaffai@mail.com" name="email" id="email" >
+					<p>
+					<label for="telfono">Telefono</label>
+					<input type="telefono" placeholder="03458907" name="telefono" id="telefono">
+                    </fieldset>
+                    <fieldset>
+                    	<legend>Operaciones</legend>
+                    	<label for="Venta">Venta</label>
+                    	<input type="radio" name="Operaciones" id="venta" value="venta">
+                    
+                    	<label for="alquiler">Alquiler</label>
+                    	<input type="radio" name="Operaciones" id="alquiler" value="alquiler">
+                    	<p>
+                    </fieldset>
+                    <fieldset>
+                    	<legend>Lugar</legend>
+                    	<label for="Localidad">Localidad</label>
+                    	<select name="localiadades" id="localidades">
+                    		<option value="Villa General Belgrano">Villa General Belgrno</option>
+                    		<option value="Los Reartes">Los Reartes</option>
+                    		<option value="La Cumbrecita">La Cumbrecita</option>
+                    	</select>
+                    </fieldset>	
+                    
+                    <label for="Mensaje">Mensaje</label><p>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <p>
+                    <input type="reset" value="Cancelar">
+                    <input type="submit" value="Enviar"> 
+
+
+				</form>
+				<!-- cierra from -->
+			</article>
+		</section>
+	</main>
+	<footer class="textCenter"; class="pie">
+		<h3 class="pie__titulo--xl">Redes Sociales</h3>
+		<a href="https://facebook.com" target="_blank">
+			<img src="image/face.png" width="30" height="30" alt="logo de facebook" class="pie__icon--sm"></a>
+			<p>
+		<a href="https://www.instagram.com" target="_blank">
+			<img src="image/instan.jpg" width="30" height="30" alt="logo de instagram" class="pie__icon--sm"></a>
+
+	</footer>
+
+	</div>
+</body>
+</html>

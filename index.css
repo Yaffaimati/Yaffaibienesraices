@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital,wght@0,500;1,300;1,900&family=Sansita+Swashed&display=swap');
+*{ font-family: 'Roboto', sans-serif; 
+  /*margin:;
+   padding:*/; } 
+html{font-size: 62.5%;}
+
+
+body{background-image: url(image/fondo1.jpg);
+     background-repeat: no-repeat;
+     background-position: center top;
+     background-size: cover;
+     background-attachment: scroll;}
+
+div p { color: white;
+    font-size: 2.5rem;
+ font-family: 'Sansita Swashed';
+text-align: center;}
+
+
+nav {background-color: rgba(138,207,196, 0.4);
+     display: flex;
+     width: 100%;
+     
+    }
+   
+     nav ul li a {
+                font-size: 3.5vw;
+               color: rgb(38,46,45);
+               font-family: 'Roboto', sans-serif;
+               
+ }
+
+          nav ul li a li a {
+          	          color: rgb(242,241,235);
+          	           font-family: 'serif;', sans-serif ;
+                        font-size: 2.5vh; 
+
+                    }
+
+
+
+h1
+   { color: black;
+     font-size: 10vw;
+     font-weight: 10vw;
+     line-height: 10vw;
+     text-align: center;
+     width: 100%;}
+
+
+section article legend  {color: black ; 
+                        font-size: 3vh;
+                        ext-decoration: underline;}
+section article label {color: rgb(23, 21, 89) ; 
+                     font-size:3vh; }
+
+footer h3 {width: 100%; 
+           color: black;
+           font-size: 5vh;
+           font-weight: 30;
+           line-height: 2.4rem}   
+
+/* selectores de clases */
+
+.textCenter{text-align: center; width: 100%;}
+.textLeft{ text-align: left; }
+.bgDark {background-color: rgba(34,35,67, 0.5);width: 100%;}
+.bglight{ background-color: rgba(78,98,78, 0.5); width: 100%; }
+.textItalic { font-style: italic; }
+.textRight{ text-align: right;}
+
+.encabezado__lema--white{ 
+                            
+                           text-align: center; /*padding:*/ ; }
+
+.encabezado__img--fluid{width: 100%;}
+
+.contactanos__box--gray{ background-color: rgba(181, 199, 201, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         margin: auto;
+                          padding: 10vw;
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 5vw;
+                          border-color: white;
+                       }
+ 
+.contactanos__titulo--xxl{ width: 100%;
+   font-size: 2vh; }
+   .pie a {text-decoration: none;}
+.pie__titulo__xl{font-size:2 rem ; text-align: center;}
+.pie__icon--sm{  }
+
+/*botonera*/
+
+.encabezado {width: 100%;}
+
+.contacto {width: 500%;
+           
+           color: rgb(38,46,45);
+           font-family: 'Roboto', sans-serif;
+        }
+/*botonera*/
+ul {width: 100%;
+   list-style-type: none;
+     background-color: orange;
+     font-size: 1vw;
+     :}
+    
+      
+
+input {width: 100%;}
+ select {width: 100%;}
+  textarea {width: 100%;}
+
+/*casas*/
+
+main h1 { background-color: rgba(0, 0, 0, 1.0); 
+                 color: orange;
+                 font-size: 4vh;
+                 width: 100%;
+                     }
+.ref-flex { display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            height: 100;
+            width: 100%;
+}
+    
+/*selectores de clases*/
+
+.ref__box--grey{ 
+                background-color: rgba(181, 199, 201, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 1vh;
+                          border-color: white;
+                          }
+.ref__box {             background-color: rgba(123, 118, 227, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         margin: auto;
+                          padding: auto;
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 2vh;
+                          border-color: white;}
+
+.contenido__ref--s{ width: 100%;
+                    color: rgb(115, 49, 86); 
+                    font-size: 2rem;
+                    text-align: center;
+                    text-decoration: underline;}
+.contenido__img--flui {width: 100%;}
+
+
+.tabla { align-content: center; 
+          width: 100%}
+
+/* Grids */
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "main""footer";
+    justify-items: center;
+    align-items: Center;
+    justify-content: stretch;
+
+}
+  
+  #botonera {
+        grid-area: nav;
+  } 
+
+  #cuerpo { 
+         grid-area: main; }
+
+  
+  #pie { 
+        grid-area: footer; }
+
+/*media queries*/
+@media only screen and (min-width: 768px) {
+    body { grid-template-columns: auto;
+           grid-template-rows: 10% 80% 10%;
+           grid-template-areas: "nav nav  " "main main main" "footer footer"; 
+           grid-column-gap: 10px;}
+
+             
+  ul {width: 100%;
+     font-size: 1vh;
+     display: block;
+
+    }
+   
+     li  { display: block;
+           width: 25%;
+           position: relative;
+            font-size: 1vh    }
+   
+          ul ul { 
+            position: relative;
+                 display: none;}
+       
+   ul ul li {display:block;}
+
+
+       ul li:hover ul {
+             display: block;
+            } 
+           
+            a{ color: white;
+              text-decoration: none;
+              font-size: 1 vh; }
+
+             a:hover 
+             { display: inline; 
+              color: black; }       
+    }
+
+@media only screen and (min-width: 1024px) {
+    body{ grid-template-columns: auto;
+          grid-template-rows: 30% 60% 10%;
+          grid-template-areas: "nav nav nav " "main main main" "footer footer footer ";
+          grid-row-gap: 10px;} 
+          
+  ul {
+      list-style: none;
+    }
+   
+     li  { display: inline-block;
+             }
+   
+          ul ul {position: absolute;
+                 }
+              
+              a:hover { display: block; 
+               }
+          
+.section-flex {
+           display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+          align-items: stretch;  
+         
+}
+
+
+
+}
+
+ 
+
+  
+             
+         
