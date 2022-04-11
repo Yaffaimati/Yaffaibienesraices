@@ -1,0 +1,32 @@
+.formulario{
+                    form{ 
+                        fieldset{ 
+                                  legend{ 
+                                         color: $tenthColor ; 
+                                         font-size: textMd;
+                                         ext-decoration: underline;
+                                         }
+                                  label {
+                                        color: $ninthColor ; 
+                                        font-size:$textMd; 
+                                        } 
+                                  input{
+                                        width: $w-100;
+                                        }
+                                  select{
+                                        width: $w-100;
+                                        }
+                                }
+                        textarea{
+                                 width: $w-100;
+                                } 
+                        } 
+             
+          }
+
+                    
+                    
+                    
+
+
+  

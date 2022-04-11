@@ -1,3 +1,5 @@
+/*commons*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital,wght@0,500;1,300;1,900&family=Sansita+Swashed&display=swap');
 *{ font-family: 'Roboto', sans-serif; 
   /*margin:;
@@ -11,57 +13,11 @@ body{background-image: url(image/fondo1.jpg);
      background-size: cover;
      background-attachment: scroll;}
 
-div p { color: white;
-    font-size: 2.5rem;
- font-family: 'Sansita Swashed';
-text-align: center;}
 
-
-nav {background-color: rgba(138,207,196, 0.4);
-     display: flex;
-     width: 100%;
-     
-    }
-   
-     nav ul li a {
-                font-size: 3.5vw;
-               color: rgb(38,46,45);
-               font-family: 'Roboto', sans-serif;
-               
- }
-
-          nav ul li a li a {
-          	          color: rgb(242,241,235);
-          	           font-family: 'serif;', sans-serif ;
-                        font-size: 2.5vh; 
-
-                    }
-
-
-
-h1
-   { color: black;
-     font-size: 10vw;
-     font-weight: 10vw;
-     line-height: 10vw;
-     text-align: center;
-     width: 100%;}
-
-
-section article legend  {color: black ; 
-                        font-size: 3vh;
-                        ext-decoration: underline;}
-section article label {color: rgb(23, 21, 89) ; 
-                     font-size:3vh; }
-
-footer h3 {width: 100%; 
-           color: black;
-           font-size: 5vh;
-           font-weight: 30;
-           line-height: 2.4rem}   
+.encabezado__img--fluid{width: 100%;}
+.encabezado {width: 100%;}
 
 /* selectores de clases */
-
 .textCenter{text-align: center; width: 100%;}
 .textLeft{ text-align: left; }
 .bgDark {background-color: rgba(34,35,67, 0.5);width: 100%;}
@@ -69,133 +25,13 @@ footer h3 {width: 100%;
 .textItalic { font-style: italic; }
 .textRight{ text-align: right;}
 
-.encabezado__lema--white{ 
-                            
-                           text-align: center; /*padding:*/ ; }
 
-.encabezado__img--fluid{width: 100%;}
-
-.contactanos__box--gray{ background-color: rgba(181, 199, 201, 0.5);
-                         width: 100%;
-                         
-                         overflow: visible;
-                         margin: auto;
-                          padding: 10vw;
-                          box-sizing: border-box;
-                          border-style: solid;
-                          border-width: 5vw;
-                          border-color: white;
-
-                       }
- 
-.contactanos__titulo--xxl{ width: 100%;
-   font-size: 2vh; }
-   .pie a {text-decoration: none;}
-.pie__titulo__xl{font-size:2 rem ; text-align: center;}
-.pie__icon--sm{  }
-
-/*botonera*/
-
-.encabezado {width: 100%;}
-
-.contacto {width: 500%;
-           
-           color: rgb(38,46,45);
-           font-family: 'Roboto', sans-serif;
-        }
-
-/*gradientes*/
-.nav-gradiente { background: linear-gradient(to top, orange,yellow); }
-
-/*transformaciones*/
-.transform:hover { transform: translate(10px,25px);
-                   cursor: pointer; }
-
-
-.scale-redes:hover{ transform: scale(1.5);
-             cursor: pointer; 
-              transition: transform 2s;
-               }
-/*animaciones*/
-@keyframes animateDiv {
-    50%{widtch:300px}
-    70%{width: 400px;}
-    80%{width: 600px}
-    90%{width: 700px; background-color:rgb(56, 102, 176) ;}
-    100%{width: 800px; background-color: rgb(48, 199, 161);}
-    }
-.animate{
-         animation-name: animateDiv; 
-         animation-iteration-count: infinite;
-         animation-timing-funsction: ease;
-         animation-duration: 3.5s;
-         animation-delay: 3s;}
-
-.transition:hover { width: 500px;
-                    background-color: skyblue;
-                    color: black;
-                    transition: all 5s }
-h1 {width: 500px;
-                    background-color: skyblue;
-                    color: black;
-                    transition: all 5s;}
-
-/*botonera*/
-ul {width: 100%;
-   list-style-type: none;
-     background-color: orange;
-     font-size: 1vw;
-     :}
-    
-      
-
-input {width: 100%;}
- select {width: 100%;}
-  textarea {width: 100%;}
-
-/*casas*/
-
-main h1 { background-color: rgba(0, 0, 0, 1.0); 
-                 color: orange;
-                 font-size: 4vh;
-                 width: 100%;
-                     }
-.ref-flex { display: flex;
-            flex-direction: column; 
+.ref-flex { display: fleection: column; 
             justify-content: space-between;
             height: 100;
             width: 100%;
 }
-    
-/*selectores de clases*/
 
-.ref__box--grey{ 
-                background-color: rgba(181, 199, 201, 0.5);
-                         width: 100%;
-                         
-                         overflow: visible;
-                         
-                          box-sizing: border-box;
-                          border-style: solid;
-                          border-width: 1vh;
-                          border-color: white;
-                          }
-.ref__box {             background-color: rgba(123, 118, 227, 0.5);
-                         width: 100%;
-                         
-                         overflow: visible;
-                         margin: auto;
-                          padding: auto;
-                          box-sizing: border-box;
-                          border-style: solid;
-                          border-width: 2vh;
-                          border-color: white;}
-
-.contenido__ref--s{ width: 100%;
-                    color: rgb(115, 49, 86); 
-                    font-size: 2rem;
-                    text-align: center;
-                    text-decoration: underline;}
 .contenido__img--flui {width: 100%;}
 
 
@@ -219,9 +55,8 @@ main h1 { background-color: rgba(0, 0, 0, 1.0);
         grid-area: nav;
   } 
 
-  #cuerpo { 
-         grid-area: main; }
-
+  #cuerpo{  
+     grid-area: main; }
   
   #pie { 
         grid-area: footer; }
@@ -289,12 +124,186 @@ main h1 { background-color: rgba(0, 0, 0, 1.0);
          flex-direction: row;
          justify-content: space-around;
           align-items: stretch;  
-         
-}
+         }
+
+/*commons*/
+
+/*encabezado*/
+
+div p { color: white;
+    font-size: 2.5rem;
+ font-family: 'Sansita Swashed';
+text-align: center;}
+
+ul {width: 100%;
+   list-style-type: none;
+     background-color: orange;
+     font-size: 1vw;}
+
+
+/*gradientes*/
+.nav-gradiente { background: linear-gradient(to top, orange,yellow); }
+
+.animate{
+         animation-name: animateDiv; 
+         animation-iteration-count: infinite;
+         animation-timing-funsction: ease;
+         animation-duration: 3.5s;
+         animation-delay: 3s;}
+
+/*transformaciones*/
+.transform:hover { transform: translate(10px,25px);
+                   cursor: pointer; }
 
 
 
-}
+               }
+/*animaciones*/
+@keyframes animateDiv {
+    50%{widtch:300px}
+    70%{width: 400px;}
+    80%{width: 600px}
+    90%{width: 700px; background-color:rgb(56, 102, 176) ;}
+    100%{width: 800px; background-color: rgb(48, 199, 161);}
+    }
+
+
+/*encabezado*/
+
+/*navBar*/
+
+nav {background-color: rgba(138,207,196, 0.4);
+     display: flex;
+     width: 100%;
+     
+    }
+   
+     nav ul li a {
+                font-size: 3.5vw;
+               color: rgb(38,46,45);
+               font-family: 'Roboto', sans-serif;
+               
+ }
+
+          nav ul li a li a {
+          	          color: rgb(242,241,235);
+          	           font-family: 'serif;', sans-serif ;
+                        font-size: 2.5vh; 
+ }
+ .encabezado__lema--white{text-align: center; /*padding:*/ ; }
+
+/*navBar*/
+
+/*main*/
+h1
+   { color: black;
+     font-size: 10vw;
+     font-weight: 10vw;
+     line-height: 10vw;
+     text-align: center;
+     width: 100%;}
+
+ .contactanos__box--gray{ background-color: rgba(181, 199, 201, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         margin: auto;
+                          padding: 10vw;
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 5vw;
+                          border-color: white;
+
+                       }
+ 
+.contactanos__titulo--xxl{ width: 100%;
+   font-size: 2vh; }
+
+.contacto {width: 500%;
+           
+           color: rgb(38,46,45);
+           font-family: 'Roboto', sans-serif;
+        }
+
+        .transition:hover { width: 500px;
+                    background-color: skyblue;
+                    color: black;
+                    transition: all 5s }
+
+h1 {width: 500px;
+                    background-color: skyblue;
+                    color: red;
+                    transition: all 5s;}
+
+
+ flex-dirmain h1 { background-color: rgba(0, 0, 0, 1.0); 
+                 color: orange;
+                 font-size: 4vh;
+                 width: 100%;
+                     }
+
+
+/*main*/
+
+.ref__box--grey{ 
+                background-color: rgba(181, 199, 201, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 1vh;
+                          border-color: white;
+                          }
+.ref__box {             background-color: rgba(123, 118, 227, 0.5);
+                         width: 100%;
+                         
+                         overflow: visible;
+                         margin: auto;
+                          padding: auto;
+                          box-sizing: border-box;
+                          border-style: solid;
+                          border-width: 2vh;
+                          border-color: white;}
+
+.contenido__ref--s{ width: 100%;
+                    color: rgb(115, 49, 86); 
+                    font-size: 2rem;
+                    text-align: center;
+                    text-decoration: underline;}.
+/*referencia*/
+
+
+
+
+/*formulario*/
+section article legend  {color: black ; 
+                        font-size: 3vh;
+                        ext-decoration: underline;}
+section article label {color: rgb(23, 21, 89) ; 
+                     font-size:3vh; } 
+
+input {width: 100%;}
+ select {width: 100%;}
+  textarea {width: 100%;}
+/*formulario*/
+/*footer*/
+
+footer h3 {width: 100%; 
+           color: black;
+           font-size: 5vh;
+           font-weight: 30;
+           line-height: 2.4rem}   
+
+.pie a {text-decoration: none;}
+.pie__titulo__xl{font-size:2 rem ; text-align: center;}
+.pie__icon--sm{  }
+
+.scale-redes:hover{ transform: scale(1.5);
+             cursor: pointer; 
+              transition: transform 2s;}
+/*footer*/
 
  
 

@@ -1,0 +1,53 @@
+main{ 
+     section{ 
+             h1{ 
+                background-color: $twelfhhColot; 
+                color: $secondColor;
+                font-size: $textXl;
+                width: $w-100;
+               }
+              article{  
+                      h1{ 
+                        color: $tenthColor;
+                        font-size: 10vw;
+                        font-weight: 10vw;
+                        line-height: 10vw;
+                        text-align: center;
+                        width:$w-100-,
+                        
+                       } 
+                    }
+            }
+    }
+
+ .contactanos__box--gray{ 
+                         background-color: $sevenColor;
+                         width: $w-100;
+                         overflow: visible;
+                         margin: auto;
+                         padding: 10vw;
+                         box-sizing: border-box;
+                         border-style: solid;
+                         border-width: 5vw;
+                         border-color: white;
+                        }
+ 
+.contactanos__titulo--xxl{ 
+                          width: $w-100;
+                          font-size: $textSm;
+                         }
+
+.contacto {
+          width: $w-500;           
+          color: $fifthColor;
+          font-family: 'Roboto', sans-serif;
+          }
+
+.transition:hover{
+                   width: $w-500;
+                   background-color: $thirteenthColor;
+                   color: $tenthColor
+                   transition: all 5s
+                 }
+
+             
