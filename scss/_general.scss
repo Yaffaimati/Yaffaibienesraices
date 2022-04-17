@@ -16,23 +16,25 @@ body{background-image: url(image/fondo1.jpg);
 /* selectores de clases */
 .textCenter{text-align: center; width: $w-100;}
 .textLeft{ text-align: left; }
-.bgDark {background-color: $bodyColor; width: $w-100;}
-.bglight{ background-color: $firstColor;width: $w-100; }
+.bgDark {
+    background-color: map-get($map:$paleta,$key:'uno'); width: $w-100;}
+.bglight{ background-color: map-get($map:$paleta,$key:'dos');width: $w-100; }
 .textItalic { font-style: italic; }
 .textRight{ text-align: right;}
 .encabezado__img--fluid{width: $w-100;}
 .encabezado {width: $w-100;}
-.ref-flex { display: column;
-            justify-content: space-between;
+.ref-flex { 
+            @include justi(column,space-between);
             height: 100;
             width: $w-100;}
 .contenido__img--flui {width: $w-100;}
 .tabla { align-content: center; 
           width: $w-100}
 .section-flex {
-               display: flex;
+                @include justi(flex,space-around)
+               ;
                flex-direction: row;
-             justify-content: space-around;
+             
              align-items: stretch;}
 
 /* Grids */
@@ -65,22 +67,24 @@ body{background-image: url(image/fondo1.jpg);
 header {
         nav{ 
             div{
-                ul{width:$w-100;
-                   font-size: $textSm;
-                   display: block;
+                ul{
+                    @include display($w-100,$textSm,block) ;
+
+                    
                    ul{ position: relative;
                        display: none;
                      &:hove{ display: block;
-                    li{ display: block;
-                       width: $w-25;
+                    li{ 
                        position: relative;
-                      font-size: $textSm;    
+                       
+                      @include display($w-25,$textSm,block);   
                        }
                              a {color: $eleventhColor;
                                text-decoration: none;
-                               font-size:$textSm;
-                                &:hover{ display: inline; 
+                               
+                                &:hover{  
                                 color: $tenthColor;
+                                @include display($w-100,$textSm,inline);
    
                                       }
 

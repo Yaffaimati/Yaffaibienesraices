@@ -2,7 +2,7 @@
       nav{
           background-color: $navColor;
           display: flex;
-          $w-100;
+          width: $w-100;
           ul{  
              li{ 
               a{
@@ -21,5 +21,4 @@
             }
          }
       }
- .encabezado__lema--white{text-align: center; /*padding:*/ ; }
-/*
+ .encabezado__lema--white{text-align: center}

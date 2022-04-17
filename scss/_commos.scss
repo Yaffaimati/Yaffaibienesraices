@@ -29,5 +29,26 @@ $textXXl:5vh;
 $textXl:4vh;
 $textMd:3vh;
 $textSm:2vh;
-$textSm:1vh;
-/* 
+
+
+//maxin
+@mixin display($width,$font-size,$display){
+width:$width;
+font-size:$font-size;
+display:$display;
+}
+
+@mixin justi ($display,$justify-content){
+	display:$display;
+	justify-content:$justify;
+}
+
+//map
+$paleta: (
+	  'uno': #222343  ,
+	  'dos': #4e624e ,
+	  'tres': #262e2d,
+	  'cuatro': #87CEEB ,
+	   'cinco':  #000000,
+	      )
+
