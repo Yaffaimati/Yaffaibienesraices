@@ -3,7 +3,7 @@
        div{
            p{
             color: $eleventhColor;
-            font-size: 2.5rem;
+            font-size: 5rem;
             font-family: 'Sansita Swashed';
             text-align: center;
             }  
@@ -12,10 +12,15 @@
            width: $w-100;
            list-style-type: none;
            background-color: orange;
-           font-size: $textSm;
+           font-size: $textMd;
           }
   }
 /*gradientes*/
+
+.mati {$breadcrumb-divider: none;}
+
+.encabezado__lema--white{text-align: center; }
+
 .nav-gradiente { background: linear-gradient(to top, orange,yellow); }
 
 .animate{

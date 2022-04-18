@@ -1,15 +1,15 @@
 main{ 
      section{ 
-             h1{ 
-                background-color:$twelfthColor; 
+             h1{  
+                
                 color: $secondColor;
-                font-size: $textXl;
+                font-size: $textMd;
                 width: $w-100;
                }
               article{  
                       h1{ 
                         color: $tenthColor;
-                        font-size: 10vw;
+                        font-size: 3rem;
                         font-weight: 10vw;
                         line-height: 10vw;
                         text-align: center;
@@ -45,7 +45,7 @@ main{
 
 .transition:hover{
                    width: $w-500;
-                   background-color: $thirteenthColor;
+                   background-color: rgba(124, 89, 50, 0.5);
                    color: $tenthColor
                 
                  }
