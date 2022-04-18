@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital,wght@0,500;1,300;1,900&family=Sansita+Swashed&display=swap');
+*{ font-family: 'Roboto', sans-serif; 
+  /*margin:;
+   padding:*/; } 
+ html{font-size: 62.5%;}
+
+
+body{background-image: url(image/fondo1.jpg);
+     background-repeat: no-repeat;
+     background-position: center top;
+     background-size: cover;
+     background-attachment: scroll;}
+
+
+
+/* selectores de clases */
+.textCenter{text-align: center; width: $w-100;}
+.textLeft{ text-align: left; }
+.bgDark {background-color: $bodyColor; width: $w-100;}
+.bglight{ background-color: $firstColor;width: $w-100; }
+.textItalic { font-style: italic; }
+.textRight{ text-align: right;}
+.encabezado__img--fluid{width: $w-100;}
+.encabezado {width: $w-100;}
+.ref-flex { display: column;
+            justify-content: space-between;
+            height: 100;
+            width: $w-100;}
+.contenido__img--flui {width: $w-100;}
+.tabla { align-content: center; 
+          width: $w-100}
+.section-flex {
+               display: flex;
+               flex-direction: row;
+             justify-content: space-around;
+             align-items: stretch;}
+
+/* Grids */
+.contenedor { 
+    width: $w-100;
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "main""footer";
+    justify-items: center;
+    align-items: Center;
+    justify-content: stretch;}
+
+  #botonera {
+         grid-area: nav;
+  } 
+
+  #cuerpo{  
+        grid-area: main; }
+  
+  #pie { 
+        grid-area: footer; }
+
+/*media queries*/
+@media only screen and (min-width: 768px) {
+    body { grid-template-columns: auto;
+           grid-template-rows: 10% 80% 10%;
+           grid-template-areas: "nav nav  " "main main main" "footer footer"; 
+           grid-column-gap: 10px;}
+header {
+        nav{ 
+            div{
+                ul{width:$w-100;
+                   font-size: $textSm;
+                   display: block;
+                   ul{ position: relative;
+                       display: none;
+                     &:hove{ display: block;
+                    li{ display: block;
+                       width: $w-25;
+                       position: relative;
+                      font-size: $textSm;    
+                       }
+                             a {color: $eleventhColor;
+                               text-decoration: none;
+                               font-size:$textSm;
+                                &:hover{ display: inline; 
+                                color: $tenthColor;
+   
+                                      }
+
+                                }
+                        }
+
+                      }
+
+                   }
+
+                }
+            }
+
+        }
+}
+
+@media only screen and (min-width: 1024px) {
+    body{ grid-template-columns: auto;
+          grid-template-rows: 30% 60% 10%;
+          grid-template-areas: "nav nav nav " "main main main" "footer footer footer ";
+          grid-row-gap: 10px;} 
+          
+ul {
+      list-style: none;
+    }
+   
+     li  { display: inline-block;
+             }
+   
+          ul ul {position: absolute;
+                 }
+              
+              a:hover { display: block; 
+               }
+
+}

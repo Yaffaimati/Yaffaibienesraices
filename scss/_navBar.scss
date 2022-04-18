@@ -1,0 +1,24 @@
+.botonera{ 
+      nav{
+          background-color: $navColor;
+          display: flex;
+          width: $w-100;
+          ul{  
+             li{ 
+              a{
+                font-size: 3.5vw;
+                color: $fifthColor;
+                font-family: 'Roboto', sans-serif;
+                li{
+                  a{
+         	          color: $sixthColor;  
+                    font-family: 'serif;', sans-serif ;
+                    font-size: 2.5vh; 
+                   }
+                  }
+                }              
+               }
+            }
+         }
+      }
+ .encabezado__lema--white{text-align: center ; }
