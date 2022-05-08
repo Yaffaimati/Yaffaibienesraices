@@ -1,28 +1,40 @@
-.formulario{
-                    form{ 
-                        fieldset{ 
-                                  legend{ 
-                                         color: $tenthColor ; 
-                                         font-size: textMd;
-                                         ext-decoration: underline;
-                                         }
-                                  label {
-                                        color: $ninthColor ; 
-                                        font-size:$textMd; 
-                                        } 
-                                  input{
-                                        width: $w-100;
-                                        }
-                                  select{
-                                        width: $w-100;
-                                        }
+form{ 
+      fieldset{ 
+               legend{ 
+                      color: $tenthColor ; 
+                      font-size: $textXXl;
+                      ext-decoration: underline;
+                      }
+                      label {
+                            color: $ninthColor ; 
+                            font-size:$textXl; 
+                            } 
+                            input{
+                                 width: $w-100;
+                                 font-size: $textMd;
+
+                                 }
+                                select{
+                                      width: $w-100;
+                                      font-size: $textMd;
+                                      }
                                 }
+                        label {
+                            color: $ninthColor ; 
+                            font-size:$textXl; 
+                            } 
                         textarea{
                                  width: $w-100;
+                                 font-size: $textMd;
                                 } 
+                                input{
+                                 width: $w-100;
+                                 font-size: $textMd;
+
+                                 }
                         } 
              
-}
+
 
                     
                     

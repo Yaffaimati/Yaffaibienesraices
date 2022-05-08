@@ -1,9 +1,7 @@
-.encabezado{ 
-    
-       div{
+    div{
            p{
             color: $eleventhColor;
-            font-size: 5rem;
+            font-size: 2.5rem;
             font-family: 'Sansita Swashed';
             text-align: center;
             }  
@@ -12,9 +10,9 @@
            width: $w-100;
            list-style-type: none;
            background-color: orange;
-           font-size: $textMd;
+           font-size: $textSm;
           }
-  }
+  
 /*gradientes*/
 
 .mati {$breadcrumb-divider: none;}
@@ -26,19 +24,18 @@
 .animate{
          animation-name: animateDiv; 
          animation-iteration-count: infinite;
-         animation-timing-funsction: ease;
-         animation-duration: 3.5s;
+         animation-timing-funsction: ease-in;
+         animation-duration: 3.5Ss;
          animation-delay: 3s;}
-
 /*transformaciones*/
 .transform:hover { transform: translate(10px,25px);
                    cursor: pointer; }
 
-/*animaciones*/
 @keyframes animateDiv {
-    50% {width: 300px;}
-    70% {width: 400px;}
-    50% {width: 600px;}
-    90% {width: 700px; background-color:$thirdColor ;}
+    0% {width: 100px;}
+    o.2s {width: 50px;}
+    25% {width: 600px;}
+    50% {width: 700px; background-color:$thirdColor ;}
+    75%{ width: 300px;}
     100% {width: 800px; background-color:$fourthColor;}
     }

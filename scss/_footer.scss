@@ -1,18 +1,17 @@
-.redes{
-      h3{
+footer{  ;
+      h3{ 
          width: $w-100; 
-         color: $tenthColor;
-         font-size: $textXXl;
+         color: $eighthColor;
+         font-size:$textMd;
          font-weight: 30;
          line-height: 2.4rem
         } 
-       }  
+   div{ 
+      p {  
+      font-size: $textMd;
+      color:$ninthColor;
+   }
+   }  
+ }
 
-.pie a {text-decoration: none;}
-.pie__titulo__xl{font-size:$textSm ; text-align: center;}
-.pie__icon--sm{  }
-
-.scale-redes:hover{ transform: scale(1.5);
-             cursor: pointer; 
-              transition: transform 2s}
               

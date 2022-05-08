@@ -1,10 +1,10 @@
-.botonera{ 
+body 
       nav{
-          background-color: $navColor;
+          background-color: orange;
           display: flex;
           width: $w-100;
           ul{  
-             li{ 
+             li{ padding-right: 40vh ;
               a{
                 font-size: 3.5vw;
                 color: $fifthColor;
@@ -20,5 +20,6 @@
                }
             }
          }
-      }
+      
  .encabezado__lema--white{text-align: center ; }
+ 

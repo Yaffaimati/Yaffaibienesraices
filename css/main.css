@@ -15,6 +15,7 @@ body {
   background-attachment: scroll; }
 
 /* selectores de clases */
+/*Imagen*/
 .textCenter {
   text-align: center;
   width: 100%; }
@@ -125,17 +126,17 @@ body {
   a:hover {
     display: block; } }
 
-.encabezado div p {
+div p {
   color: white;
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-family: 'Sansita Swashed';
   text-align: center; }
 
-.encabezado ul {
+ul {
   width: 100%;
   list-style-type: none;
   background-color: orange;
-  font-size: 3vh; }
+  font-size: 2vh; }
 
 /*gradientes*/
 .encabezado__lema--white {
@@ -147,8 +148,8 @@ body {
 .animate {
   animation-name: animateDiv;
   animation-iteration-count: infinite;
-  animation-timing-funsction: ease;
-  animation-duration: 3.5s;
+  animation-timing-funsction: ease-in;
+  animation-duration: 3.5Ss;
   animation-delay: 3s; }
 
 /*transformaciones*/
@@ -156,45 +157,53 @@ body {
   transform: translate(10px, 25px);
   cursor: pointer; }
 
-/*animaciones*/
 @keyframes animateDiv {
-  50% {
-    width: 300px; }
-  70% {
-    width: 400px; }
-  50% {
+  0% {
+    width: 100px; }
+  o.2s {
+    width: 50px; }
+  25% {
     width: 600px; }
-  90% {
+  50% {
     width: 700px;
     background-color: #3866b0; }
+  75% {
+    width: 300px; }
   100% {
     width: 800px;
     background-color: #30c7a1; } }
 
-.botonera nav {
-  background-color: rgba(138, 207, 196, 0.4);
+body
+nav {
+  background-color: orange;
   display: flex;
   width: 100%; }
-  .botonera nav ul li a {
-    font-size: 3.5vw;
-    color: #262e2d;
-    font-family: 'Roboto', sans-serif; }
-    .botonera nav ul li a li a {
-      color: #f2f1eb;
-      font-family: 'serif;', sans-serif;
-      font-size: 2.5vh; }
+  body
+nav ul li {
+    padding-right: 40vh; }
+    body
+nav ul li a {
+      font-size: 3.5vw;
+      color: #262e2d;
+      font-family: 'Roboto', sans-serif; }
+      body
+nav ul li a li a {
+        color: #f2f1eb;
+        font-family: 'serif;', sans-serif;
+        font-size: 2.5vh; }
 
 .encabezado__lema--white {
   text-align: center; }
 
 main section h1 {
   color: orange;
-  font-size: 3vh;
-  width: 100%; }
+  font-size: 8vh;
+  width: 100%;
+  text-align: center; }
 
 main section article h1 {
-  color: black;
-  font-size: 3rem;
+  color: orange;
+  font-size: 8vh;
   font-weight: 10vw;
   line-height: 10vw;
   text-align: center;
@@ -211,53 +220,47 @@ main section article h1 {
   border-width: 5vw;
   border-color: white; }
 
-.contactanos__titulo--xxl {
-  width: 100%;
-  font-size: 2vh; }
-
-.contacto {
-  width: 500%;
-  color: #262e2d;
-  font-family: 'Roboto', sans-serif; }
-
 .transition:hover {
-  width: 500%;
+  width: 100%;
   background-color: rgba(124, 89, 50, 0.5);
   color: black; }
 
-.formulario form fieldset legend {
-  color: black;
-  font-size: textMd;
-  ext-decoration: underline; }
-
-.formulario form fieldset label {
-  color: #171559;
-  font-size: 3vh; }
-
-.formulario form fieldset input {
-  width: 100%; }
-
-.formulario form fieldset select {
-  width: 100%; }
-
-.formulario form textarea {
-  width: 100%; }
-
-.redes h3 {
-  width: 100%;
+form fieldset legend {
   color: black;
   font-size: 5vh;
+  ext-decoration: underline; }
+
+form fieldset label {
+  color: #171559;
+  font-size: 4vh; }
+
+form fieldset input {
+  width: 100%;
+  font-size: 3vh; }
+
+form fieldset select {
+  width: 100%;
+  font-size: 3vh; }
+
+form label {
+  color: #171559;
+  font-size: 4vh; }
+
+form textarea {
+  width: 100%;
+  font-size: 3vh; }
+
+form input {
+  width: 100%;
+  font-size: 3vh; }
+
+footer h3 {
+  width: 100%;
+  color: #733156;
+  font-size: 3vh;
   font-weight: 30;
   line-height: 2.4rem; }
 
-.pie a {
-  text-decoration: none; }
-
-.pie__titulo__xl {
-  font-size: 2vh;
-  text-align: center; }
-
-.scale-redes:hover {
-  transform: scale(1.5);
-  cursor: pointer;
-  transition: transform 2s; }
+footer div p {
+  font-size: 3vh;
+  color: #171559; }
