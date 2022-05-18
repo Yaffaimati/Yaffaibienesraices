@@ -66,7 +66,7 @@ body{background-image: url(image/fondo1.jpg);
            grid-template-areas: "nav nav  " "main main main" "footer footer"; 
            grid-column-gap: 10px;}
 header {
-        nav{ 
+        nav{ width:$w-100; 
             div{
                 ul{width:$w-100;
                    font-size: $textSm;
